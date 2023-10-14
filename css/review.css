@@ -1,0 +1,104 @@
+.main .review-section {
+  background-image: linear-gradient(to bottom, #e3e9f05e, #e3e9f05e),
+    url("../img/bg.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Layout */
+  grid-row: 3/4;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  display: grid;
+  grid-template-rows: 100px auto;
+}
+
+.main .review-section p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.main .review-section p span {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.main .review-section .main-review {
+  display: grid;
+  margin: 0 100px 0 100px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 240px;
+  gap: 20px;
+}
+.main .review-section .main-review .review {
+  background-color: #edf1f54b;
+  box-shadow: 0px 0px 10px 5px rgba(73, 73, 73, 0.26);
+  border-radius: 30px;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+}
+
+.main .review-section .main-review .review .img-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  gap: 10px;
+}
+
+.main .review-section .main-review .review .img-container .img1 {
+  width: 60px;
+  transition: 1s ease;
+}
+
+.main .review-section .main-review .review .img-container .img1:hover {
+  transform: scale(1.3);
+}
+
+.main .review-section .main-review .review .img-container .img2 {
+  width: 100px;
+}
+
+.main .review-section .main-review .review .sentence-container {
+  overflow: auto;
+  font-size: 15px;
+  text-indent: 30px;
+  margin: 0 30px 0 30px;
+}
+
+@media (max-width: 1200px) {
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .main .review-section .main-review {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    margin: 0 100px;
+  }
+  .main .review-section .main-review .review .sentence-container {
+    font-size: 13px;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .main .review-section .main-review .review .sentence-container {
+    font-size: 15px;
+  }
+}
+
+/* Cellphone*/
+
+@media (max-width: 567px) {
+  .main .review-section .main-review .review .sentence-container {
+    font-size: 13px;
+  }
+}
